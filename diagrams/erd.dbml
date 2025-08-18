@@ -7,18 +7,18 @@ Table Governors {
 Table Colonies {
   id integer [primary key]
   name varchar
-  governor_id int [ref: > Governors.id]
+  governorId int [ref: > Governors.id]
 }
 
-Table Colony_Inventory {
+Table ColonyInventory {
   id int [pk]
-  colony_id int [ref: > Colonies.id]
-  mineral_id int [ref: > Minerals.id ]
+  colonyId int [ref: > Colonies.id]
+  mineralId int [ref: > Minerals.id ]
   tons int
 }
 
 
-Table mining_facilities {
+Table MiningFacilities {
   id integer [primary key]
   names varchar
   active boolean
@@ -30,10 +30,10 @@ Table Minerals {
 
 }
 
-Table Facility_Inventory {
+Table FacilityInventory {
 id int [pk]
-mineral_id int [ref: > Minerals.id]
-mining_facility_id int [ref: > mining_facilities.id]
+mineralId int [ref: > Minerals.id]
+miningFacilityId int [ref: > MiningFacilities.id]
 tons int
 }
 

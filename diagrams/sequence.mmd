@@ -34,14 +34,12 @@ ColonyInventory.js -->> main: here is the colony minerals HTML
 main->>FacilityInventory.js: request facility minerals HTML
 FacilityInventory.js -->> main: here is the facility minerals HTML
 
-main->>SpaceCart.js: request spaceCart minerals HTML
+main->>SpaceCart.js: request spaceCart HTML
 SpaceCart.js ->> PurchaseButton.js: give me button HTML
 PurchaseButton.js -->> SpaceCart.js: here is button HTML
-SpaceCart.js -->> main: here is the spaceCart minerals HTML
+SpaceCart.js -->> main: here is the spaceCart HTML
 
 User->>Governors.js: select governor
-Governors.js ->> TransientState.js: set colonyId to the colonies id
-TransientState.js -->> Governors.js: done
 Governors.js->>ColonyInventory.js: set active governor & colony
 ColonyInventory.js ->> database.js: give me colony inventory
 database.js -->> ColonyInventory.js: here is the colony inventory
@@ -49,6 +47,8 @@ loop
     note over ColonyInventory.js: loop over colony inventory <br> match Colonies governorId <br> with Governors id
 
 end
+Governors.js ->> TransientState.js: set colonyId to the colonies id
+TransientState.js -->> Governors.js: done
 loop
     note over ColonyInventory.js:loop over matched colonyInventory<br> To get the minerals and<br> create HTML
 end

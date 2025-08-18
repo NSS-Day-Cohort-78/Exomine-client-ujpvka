@@ -12,10 +12,22 @@ SpaceCart.js
 
 ColonyInventory.js
 
+PurchaseButton.js
+
+
 main
 
 database
 
-PurchaseButton.js
+db names lower or camelcase
+governors
+
+function name same name as module
+export const PurchaseButton
+
+setColonyId
 
 feature/purchase-button
+
+html use kebab-case
+

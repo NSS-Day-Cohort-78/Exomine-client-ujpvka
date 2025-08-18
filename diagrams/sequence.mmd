@@ -47,8 +47,8 @@ loop
     note over ColonyInventory.js: loop over colony inventory <br> match Colonies governorId <br> with Governors id
 
 end
-Governors.js ->> TransientState.js: set colonyId to the colonies id
-TransientState.js -->> Governors.js: done
+ColonyInventory.js ->> TransientState.js: set colonyId to the colonies id
+TransientState.js -->> ColonyInventory.js: done
 loop
     note over ColonyInventory.js:loop over matched colonyInventory<br> To get the minerals and<br> create HTML
 end

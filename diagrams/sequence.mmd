@@ -1,0 +1,25 @@
+sequenceDiagram
+main->>Governors.js: render governors list
+main->>Facilities.js: render facilities list
+main->>ColonyInventory.js: render initial colony minerals
+
+User->>Governors.js: select governor
+Governors.js->>ColonyInventory.js: set active governor & colony
+ColonyInventory.js->>database.js: get colony minerals
+database.js->>ColonyInventory.js: colonyMinerals         single backward arrow
+
+User->>Facilities.js: select facility
+Facilities.js->>FacilityInventory.js: show facility minerals
+FacilityInventory.js->>database.js: get facility minerals
+
+User->>FacilityInventory.js: add mineral to cart
+
+FacilityInventory.js ->> TransientState.js: update transient state with user choice
+
+User ->> PurchaseButton.js: clicks purchase
+
+PurchaseButton.js -->> TransientState.js: update database
+
+TransientState.js -->> database.js: updates the database with transient info.
+
+note over main: re render

@@ -1,23 +1,24 @@
 export const Governors = async () => {
-	// dummy api
-	const response = await fetch("https://jsonplaceholder.typicode.com/users")
-	const governors = await response.json()
+    // dummy api
+    const response = await fetch("https://jsonplaceholder.typicode.com/users")
+    const governors = await response.json()
 
-	let html = `
+    let html = `
     <section>
-    <p>Choose a governor</p>
-    <select>
+        <p>Choose a governor</p>
+        <select>
     `
-	html += governors
-		.map(governor => {
-			return `
+    html += governors
+        .map((governor) => {
+            return `
         <option>${governor.name}</option>
         `
-		})
-		.join("")
+        })
+        .join("")
 
-	html += `</select>
+    html += `
+        </select>
     </section>`
 
-	return html
+    return html
 }

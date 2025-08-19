@@ -1,12 +1,8 @@
-
-
 const handlePurchaseSubmission = (clickEvent) => {
     if (clickEvent.target.id === "purchase-button") {
-
-            savePurchase()
+        savePurchase()
     }
 }
-
 
 export const PurchaseButton = () => {
     document.addEventListener("click", handlePurchaseSubmission)

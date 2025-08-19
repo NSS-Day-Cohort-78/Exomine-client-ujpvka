@@ -25,7 +25,7 @@ export const setFacilityTons = (tons) => {
 }
 
 export const setColonyId = (id) => {
-    colonyState.miningColonyId = id
+    colonyState.colonyId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 

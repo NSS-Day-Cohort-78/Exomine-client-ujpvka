@@ -1,9 +1,41 @@
-const state = {
-
+const colonyState = {
+    colonyId: 0,
+    mineralId: 0,
+    tons: 0
+}
+const facilityState = {
+    miningFacilityId: 0,
+    mineralId: 0,
+    tons: 0
 }
 
-export const setFacility = (facilityId) => {
-    state.selectedFacility = facilityId
+export const setFacilityId = (id) => {
+    facilityState.miningFacilityId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
+export const setFacilityMineralId = (id) => {
+    facilityState.mineralId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
+export const setFacilityTons = (tons) => {
+    facilityState.tons = tons
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
+export const setColonyId = (id) => {
+    colonyState.miningColonyId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
+export const setColonyMineralId = (id) => {
+    colonyState.mineralId = id
+    document.dispatchEvent(new CustomEvent("stateChanged"))
+}
+
+export const setColonyTons = (tons) => {
+    colonyState.tons = tons
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
 
@@ -19,8 +51,6 @@ export const purchaseMineral = () => {
 
         Only the foolhardy try to solve this problem with code.
     */
-
-
 
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }

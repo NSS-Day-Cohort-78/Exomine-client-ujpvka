@@ -1,24 +1,26 @@
 export const Governors = async () => {
-    // dummy api
-    const response = await fetch("http://localhost:8088/governors")
-    const governors = await response.json()
+  // dummy api -> artık local API
+  const response = await fetch("http://localhost:8088/governors");
+  const governors = await response.json();
 
-    let html = `
+  let html = `
     <section class='dropdown-container'>
-        <label for='choose-governor'>Choose a governor</label>
-        <select id='choose-governor'>
-    `
-    html += governors
-        .map((governor) => {
-            return `
+      <label for='choose-governor'>Choose a governor</label>
+      <select id='choose-governor'>
+  `;
+
+  html += governors
+    .map((governor) => {
+      return `
         <option value='${governor.id}'>${governor.name}</option>
-        `
-        })
-        .join("")
+      `;
+    })
+    .join("");
 
-    html += `
-        </select>
-    </section>`
+  html += `
+      </select>
+    </section>
+  `;
 
-    return html
-}
+  return html;
+};

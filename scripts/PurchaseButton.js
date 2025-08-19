@@ -1,4 +1,4 @@
-import { PurchaseButton } "./TransientState.js"
+
 
 const handlePurchaseSubmission = (clickEvent) => {
     if (clickEvent.target.id === "purchase-button") {

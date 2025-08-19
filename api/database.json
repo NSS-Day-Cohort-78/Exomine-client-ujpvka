@@ -1,4 +1,180 @@
 {
-    "minerals":[],
-    "facilityMinerals": []
+    "minerals":[
+        {
+            "id": 1,
+            "name": "Iron"
+        },
+        {
+            "id": 2,
+            "name": "Chromium"
+        },
+        {
+            "id": 3,
+            "name": "Molybdenum"
+        },
+        {
+            "id": 4,
+            "name": "Gold"
+        },
+        {
+            "id": 5,
+            "name": "Copper"
+        },
+        {
+            "id": 6,
+            "name": "Platinum"
+        },
+        {
+            "id": 7,
+            "name": "Lithium"
+        },
+        {
+            "id": 8,
+            "name": "Titanium"
+        },
+        {
+            "id": 9,
+            "name": "Silver"
+        },
+        {
+            "id": 10,
+            "name": "Uranium"
+        }
+    ],
+    "governors": [
+        {
+            "id": 1,
+            "name": "Patricia Purdy",
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Katrina Bahringer",
+            "active": true
+        },
+        {
+            "id": 3,
+            "name": "Lola Wolf",
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Damon Hartmann",
+            "active": true
+        },
+        {
+            "id": 5,
+            "name": "Marcus Chen",
+            "active": true
+        },
+        {
+            "id": 6,
+            "name": "Elena Rodriguez",
+            "active": false
+        },
+        {
+            "id": 7,
+            "name": "Viktor Petrov",
+            "active": true
+        },
+        {
+            "id": 8,
+            "name": "Sarah Mitchell",
+            "active": true
+        },
+        {
+            "id": 9,
+            "name": "Ahmed Hassan",
+            "active": false
+        }
+    ],
+    "colonies": [
+        {
+            "id": 1,
+            "name": "Earth",
+            "governorId": 1
+        },
+        {
+            "id": 2,
+            "name": "Mars",
+            "governorId": 2
+        },
+        {
+            "id": 3,
+            "name": "Europa",
+            "governorId": 3
+        },
+        {
+            "id": 4,
+            "name": "Neptune",
+            "governorId": 4
+        },
+        {
+            "id": 5,
+            "name": "Venus",
+            "governorId": 5
+        },
+        {
+            "id": 6,
+            "name": "Proxima b",
+            "governorId": 6
+        },
+        {
+            "id": 7,
+            "name": "Kepler-452b",
+            "governorId": 7
+        },
+        {
+            "id": 8,
+            "name": "Enceladus",
+            "governorId": 8
+        },
+        {
+            "id": 9,
+            "name": "Ceres",
+            "governorId": 9
+        }
+    ],
+    "miningFacilities": [
+        {
+            "id": 1,
+            "name": "Ganymede",
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Io",
+            "active": true
+        },
+        {
+            "id": 3,
+            "name": "Titan",
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Phobos Station",
+            "active": true
+        },
+        {
+            "id": 5,
+            "name": "Asteroid Belt Alpha",
+            "active": false
+        },
+        {
+            "id": 6,
+            "name": "Luna Base",
+            "active": true
+        },
+        {
+            "id": 7,
+            "name": "Callisto Mining",
+            "active": true
+        },
+        {
+            "id": 8,
+            "name": "Deimos Outpost",
+            "active": false
+        }
+    ]
 }

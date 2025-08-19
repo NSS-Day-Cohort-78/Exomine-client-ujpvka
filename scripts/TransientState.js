@@ -54,3 +54,11 @@ export const purchaseMineral = () => {
 
     document.dispatchEvent(new CustomEvent("stateChanged"))
 }
+
+export const getColonyTransientState = () => {
+    return structuredClone(colonyState)
+}
+
+export const getFacilityTransientState = () => {
+    return structuredClone(facilityState)
+}

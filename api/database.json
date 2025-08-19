@@ -177,7 +177,20 @@
             "active": false
         }
     ],
-    "colonyInventory": [],
+    "colonyInventory": [
+        {
+            "id": 1,
+            "colonyId": 1,
+            "mineralId": 1,
+            "tons": 2
+        },
+        {
+            "id": 1,
+            "colonyId": 1,
+            "mineralId": 2,
+            "tons": 4
+        }
+    ],
     "facilityInventory": [
         {
             "id": 1,

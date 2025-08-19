@@ -1,5 +1,5 @@
 const colonyState = {
-    colonyId: 1,
+    colonyId: 0,
     mineralId: 0,
     tons: 0
 }

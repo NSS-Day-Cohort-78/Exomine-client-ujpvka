@@ -17,11 +17,14 @@ export const ColoniesInventory = async () => {
     if (id === 0) {
         html += `<h2>Colony Minerals</h2>`
     } else {
+        const response2 = await fetch(`http://localhost:8088/colonies/${id}`)
+        const colony = await response2.json()
         const filteredArr = coloniesData.filter(
             // we will get the colony id from transient state as id
-            (colony) => colony.colony.id === id
+            (targetObj) => targetObj.colony.id === id
         )
-        html += `<h2>${filteredArr[0].colony.name}</h2>`
+
+        html += `<h2>${colony.name}</h2>`
 
         const colonyData = filteredArr
             .map((colony) => {

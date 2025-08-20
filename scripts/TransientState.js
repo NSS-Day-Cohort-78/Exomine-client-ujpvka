@@ -17,12 +17,10 @@ export const setFacilityId = (id) => {
 export const setFacilityMineralId = (id) => {
     facilityState.mineralId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
-  
 }
 
 export const setFacilityTons = (tons) => {
     facilityState.tons = tons
-   
 }
 
 export const setColonyId = (id) => {

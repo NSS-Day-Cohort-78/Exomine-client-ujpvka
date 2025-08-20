@@ -1,7 +1,7 @@
 import { getFacilityTransientState } from "./TransientState.js"
 import { PurchaseButton } from "./PurchaseButton.js"
 
-export const spaceCart = async () => {
+export const SpaceCart = async () => {
     const response = await fetch(
         "http://localhost:8088/facilityInventory?_expand=mineral&_expand=miningFacility"
     )
@@ -15,10 +15,12 @@ export const spaceCart = async () => {
 
     if (facilityTransientState.mineralId > 0) {
         const filtered = facilityInventoryData.filter(
-            (item) => item.mineralId === facilityTransientState.mineralId
+            (item) =>
+                item.mineralId === facilityTransientState.mineralId &&
+                item.miningFacilityId === facilityTransientState.miningFacilityId
         )
         for (const match of filtered) {
-            
+            html += `1 ton of ${match.mineral.name} from ${match.miningFacility.name}`
         }
     }
 
@@ -30,9 +32,3 @@ export const spaceCart = async () => {
     return html
 }
 
-
-// if (facilityTransientState.mineralId > 0) {
-//     html += `
-//         1 ton of ${facilityInventoryData.mineral.name} from ${facilityInventoryData.miningFacility.name}
-//         `
-// }

@@ -9,7 +9,8 @@ import {
     setColonyMineralId,
     setFacilityMineralId,
     getFacilityTransientState,
-    setFacilityTons
+    setFacilityTons,
+    setFacilityInventoryId
 } from "./TransientState.js"
 
 const handleChange = (changeEvent) => {
@@ -20,6 +21,7 @@ const handleChange = (changeEvent) => {
         setFacilityTons(tons)
         setColonyMineralId(convertedToNumber)
         setFacilityMineralId(convertedToNumber)
+        setFacilityInventoryId(parseInt(changeEvent.target.dataset.id))
     }
 }
 
@@ -56,7 +58,7 @@ export const FacilityInventory = async () => {
                     ? "checked"
                     : ""
             return `<div>
-            <input type="radio" name="choose-inventory" ${checked} value="${facility.mineralId}" data-tons="${facility.tons}" /> ${facility.tons} tons of ${facility.mineral.name}
+            <input type="radio" name="choose-inventory" ${checked} value="${facility.mineralId}" data-tons="${facility.tons}" data-id='${facility.id}' /> ${facility.tons} tons of ${facility.mineral.name}
     
             </div>`
         }

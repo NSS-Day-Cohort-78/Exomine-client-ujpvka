@@ -51,8 +51,12 @@ export const FacilityInventory = async () => {
 
     const divStringArray = matchedFacility.map((facility) => {
         if (facility.tons > 0) {
-            return `<div class='radio-choices'>
-            <input type="radio" name="choose-inventory" value="${facility.mineralId}" data-tons="${facility.tons}" /> ${facility.tons} tons of ${facility.mineral.name}
+            const checked =
+                facility.mineralId === facilityTransientState.mineralId
+                    ? "checked"
+                    : ""
+            return `<div>
+            <input type="radio" name="choose-inventory" ${checked} value="${facility.mineralId}" data-tons="${facility.tons}" /> ${facility.tons} tons of ${facility.mineral.name}
     
             </div>`
         }

@@ -1,11 +1,13 @@
 import { Facilities } from "./Facilities.js"
 import { Governors } from "./Governors.js"
 import { ColoniesInventory } from "./ColoniesInventory.js"
+import { SpaceCart } from "./SpaceCart.js"
 
 const render = async () => {
     const governorsHTML = await Governors()
     const miningFacilitiesHTML = await Facilities()
     const colonyInventoryHTML = await ColoniesInventory()
+    const spaceCartHtml = await SpaceCart()
 
     const container = document.getElementById("container")
 
@@ -14,6 +16,7 @@ const render = async () => {
     ${governorsHTML}
     ${miningFacilitiesHTML}
     ${colonyInventoryHTML}
+    ${spaceCartHtml}
     `
 }
 

@@ -1,8 +1,12 @@
-import { setColonyId } from "./TransientState.js"
+import { setColonyId, getColonyTransientState } from "./TransientState.js"
 
 export const Governors = async () => {
-    const response = await fetch("http://localhost:8088/governors")
+    const response = await fetch(
+        "http://localhost:8088/governors?_embed=colonies"
+    )
     const governors = await response.json()
+
+    const transient = getColonyTransientState()
 
     document.addEventListener("change", eventHandler)
 
@@ -15,9 +19,11 @@ export const Governors = async () => {
 
     html += governors
         .map((governor) => {
-            return `
-        <option value='${governor.id}'>${governor.name}</option>
-      `
+            if (governor.active) {
+                return transient.colonyId === governor.colonies[0].governorId
+                    ? `<option selected value='${governor.id}'>${governor.name}</option>`
+                    : `<option value='${governor.id}'>${governor.name}</option>`
+            }
         })
         .join("")
 
@@ -38,6 +44,6 @@ const eventHandler = async (e) => {
             (col) => col.governorId === parseInt(e.target.value)
         )
 
-        setColonyId(colony.id)
+        colony ? setColonyId(colony.id) : setColonyId(0)
     }
 }

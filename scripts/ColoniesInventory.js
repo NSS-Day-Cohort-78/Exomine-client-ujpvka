@@ -24,7 +24,7 @@ export const ColoniesInventory = async () => {
             (targetObj) => targetObj.colony.id === id
         )
 
-        html += `<h2>${colony.name}</h2>`
+        html += `<h2>${colony.name} Minerals</h2>`
 
         const colonyData = filteredArr
             .map((colony) => {

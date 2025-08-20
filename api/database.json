@@ -179,34 +179,28 @@
   ],
   "colonyInventory": [
     {
-      "id": 1,
-      "colonyId": 1,
-      "mineralId": 1,
-      "tons": 2
-    },
-    {
-      "id": 2,
-      "colonyId": 1,
-      "mineralId": 2,
-      "tons": 4
-    },
-    {
-      "colonyId": 1,
+      "colonyId": 3,
       "mineralId": 8,
-      "tons": 4,
+      "tons": 1,
+      "id": 1
+    },
+    {
+      "colonyId": 8,
+      "mineralId": 8,
+      "tons": 1,
+      "id": 2
+    },
+    {
+      "colonyId": 8,
+      "mineralId": 5,
+      "tons": 1,
       "id": 3
     },
     {
-      "colonyId": 2,
-      "mineralId": 7,
-      "tons": 2,
-      "id": 4
-    },
-    {
-      "colonyId": 2,
-      "mineralId": 6,
+      "colonyId": 3,
+      "mineralId": 5,
       "tons": 1,
-      "id": 5
+      "id": 4
     }
   ],
   "facilityInventory": [
@@ -271,10 +265,10 @@
       "tons": 4100
     },
     {
-      "id": 11,
-      "mineralId": 8,
       "miningFacilityId": 4,
-      "tons": 2200
+      "mineralId": 8,
+      "tons": 2197,
+      "id": 11
     },
     {
       "miningFacilityId": 4,
@@ -301,10 +295,10 @@
       "tons": 1750
     },
     {
-      "id": 16,
-      "mineralId": 5,
       "miningFacilityId": 6,
-      "tons": 1320
+      "mineralId": 5,
+      "tons": 1318,
+      "id": 16
     },
     {
       "miningFacilityId": 6,

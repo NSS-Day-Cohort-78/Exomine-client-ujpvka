@@ -53,7 +53,10 @@ export const purchaseMineral = async () => {
 
     let colonyInventoryId = 0
     const filteredInventory = colonyInventory.filter((inventory) => {
-        return inventory.mineralId === colonyState.mineralId
+        return (
+            inventory.mineralId === colonyState.mineralId &&
+            inventory.colonyId === colonyState.colonyId
+        )
     })
 
     if (colonyState.colonyId > 0 || colonyState.mineralId > 0) {

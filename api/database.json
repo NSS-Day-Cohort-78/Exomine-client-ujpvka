@@ -179,83 +179,65 @@
   ],
   "colonyInventory": [
     {
-      "colonyId": 7,
-      "mineralId": 1,
-      "tons": 4,
-      "id": 1
-    },
-    {
-      "colonyId": 7,
+      "colonyId": 5,
       "mineralId": 8,
-      "tons": 3,
-      "id": 2
+      "tons": 5,
+      "id": 1
     },
     {
       "colonyId": 3,
       "mineralId": 6,
+      "tons": 1,
+      "id": 2
+    },
+    {
+      "colonyId": 3,
+      "mineralId": 1,
       "tons": 2,
       "id": 3
     },
     {
-      "colonyId": 7,
-      "mineralId": 9,
-      "tons": 2,
+      "colonyId": 3,
+      "mineralId": 5,
+      "tons": 1,
       "id": 4
     },
     {
-      "colonyId": 1,
+      "colonyId": 7,
       "mineralId": 10,
       "tons": 1,
       "id": 5
     },
     {
-      "colonyId": 1,
-      "mineralId": 2,
-      "tons": 1,
+      "colonyId": 4,
+      "mineralId": 7,
+      "tons": 2,
       "id": 6
     },
     {
-      "colonyId": 1,
-      "mineralId": 4,
-      "tons": 2,
-      "id": 7
-    },
-    {
-      "colonyId": 7,
+      "colonyId": 5,
       "mineralId": 3,
       "tons": 1,
-      "id": 8
-    },
-    {
-      "colonyId": 7,
-      "mineralId": 7,
-      "tons": 1,
-      "id": 9
-    },
-    {
-      "colonyId": 7,
-      "mineralId": 5,
-      "tons": 1,
-      "id": 10
+      "id": 7
     }
   ],
   "facilityInventory": [
     {
       "miningFacilityId": 1,
       "mineralId": 1,
-      "tons": 2497,
+      "tons": 2496,
       "id": 1
     },
     {
       "miningFacilityId": 1,
       "mineralId": 8,
-      "tons": 1799,
+      "tons": 1798,
       "id": 2
     },
     {
       "miningFacilityId": 1,
       "mineralId": 5,
-      "tons": 949,
+      "tons": 948,
       "id": 3
     },
     {
@@ -285,31 +267,31 @@
     {
       "miningFacilityId": 3,
       "mineralId": 7,
-      "tons": 3197,
+      "tons": 3194,
       "id": 8
     },
     {
       "miningFacilityId": 3,
       "mineralId": 3,
-      "tons": 858,
+      "tons": 857,
       "id": 9
     },
     {
       "miningFacilityId": 4,
       "mineralId": 1,
-      "tons": 4098,
+      "tons": 4097,
       "id": 10
     },
     {
       "miningFacilityId": 4,
       "mineralId": 8,
-      "tons": 2192,
+      "tons": 2188,
       "id": 11
     },
     {
       "miningFacilityId": 4,
       "mineralId": 6,
-      "tons": 447,
+      "tons": 446,
       "id": 12
     },
     {
@@ -357,7 +339,7 @@
     {
       "miningFacilityId": 7,
       "mineralId": 10,
-      "tons": 273,
+      "tons": 272,
       "id": 20
     }
   ]

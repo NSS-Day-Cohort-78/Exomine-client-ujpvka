@@ -16,13 +16,13 @@ export const setFacilityInventoryId = (choice) => {
 }
 
 export const setFacilityId = (id) => {
-    facilityState.miningFacilityId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
+    facilityState.miningFacilityId = id
 }
 
 export const setFacilityMineralId = (id) => {
-    facilityState.mineralId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
+    facilityState.mineralId = id
 }
 
 export const setFacilityTons = (tons) => {
@@ -32,14 +32,17 @@ export const setFacilityTons = (tons) => {
 export const setColonyId = (id) => {
     colonyState.colonyId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
+    console.log(colonyState)
 }
 
 export const setColonyMineralId = (id) => {
     colonyState.mineralId = id
+    console.log(colonyState)
 }
 
 export const setColonyTons = (tons) => {
     colonyState.tons = tons
+    console.log(colonyState)
 }
 
 export const purchaseMineral = async () => {
@@ -60,18 +63,18 @@ export const purchaseMineral = async () => {
         if (filteredInventory.length > 0) {
             const url = "http://localhost:8088/colonyInventory"
             colonyInventoryId = filteredInventory[0].id
-            let tons = filteredInventory[0].tons + 1
+            const tons = filteredInventory[0].tons + 1
             setColonyTons(tons)
-            putData(url, colonyInventoryId, colonyState)
+            await putData(url, colonyInventoryId, colonyState)
             // PUT we need colonyInventory id
         } else {
             setColonyTons(1)
-            postData()
+            await postData()
             // POST
         }
         const facilityUrl = "http://localhost:8088/facilityInventory"
 
-        putData(facilityUrl, facilityInventoryId, facilityState)
+        await putData(facilityUrl, facilityInventoryId, facilityState)
     }
 
     // Put method with FacilityInventory Id

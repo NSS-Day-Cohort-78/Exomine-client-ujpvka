@@ -77,8 +77,24 @@ h2 {
 button {
     width: 9rem;
     height: 4rem;
-    border-radius: 0.4rem;
-    border: 1px solid black;
-    background-color: silver;
-    box-shadow: 0 1px 2px 0px black;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(212, 72, 62);
+    border-top: 3px solid rgb(243, 146, 139);
+    border-left: 3px solid rgb(243, 146, 139);
+    border-right: 3px solid rgb(154, 53, 46);
+    border-bottom: 3px solid rgb(154, 53, 46);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, rgb(212, 72, 62) 0%, rgb(241, 114, 105) 50%, rgb(212, 72, 62) 100%);
+}
+
+button:active {
+    background-image: linear-gradient(to right, rgb(179, 43, 33) 0%, rgb(243, 99, 89) 50%, rgb(179, 43, 33) 100%);
+    border-top: 3px solid rgb(216, 107, 99);
+    border-left: 3px solid rgb(216, 107, 99);
+    border-right: 3px solid rgb(108, 25, 21);
+    border-bottom: 3px solid rgb(108, 25, 21);
 }

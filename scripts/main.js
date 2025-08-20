@@ -14,12 +14,21 @@ const render = async () => {
     const container = document.getElementById("container")
 
     container.innerHTML = `
-    <h1>Solar System Mining Marketplace</h1>
-    ${governorsHTML}
-    ${miningFacilitiesHTML}
-    ${colonyInventoryHTML}
-    ${facilityInventoryHTML}
-    ${spaceCartHtml}
+    
+    <header>
+        <h1>Solar System Mining Marketplace</h1>
+    </header>
+    <div class='flex-container'>
+        <div class="dropdowns-container">
+            ${governorsHTML}
+            ${miningFacilitiesHTML}
+        </div>
+        ${colonyInventoryHTML}
+    </div>
+    <div class='flex-container'>
+        ${facilityInventoryHTML}
+        ${spaceCartHtml}
+    </div>
     `
 }
 

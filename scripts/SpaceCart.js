@@ -17,10 +17,11 @@ export const SpaceCart = async () => {
         const filtered = facilityInventoryData.filter(
             (item) =>
                 item.mineralId === facilityTransientState.mineralId &&
-                item.miningFacilityId === facilityTransientState.miningFacilityId
+                item.miningFacilityId ===
+                    facilityTransientState.miningFacilityId
         )
         for (const match of filtered) {
-            html += `1 ton of ${match.mineral.name} from ${match.miningFacility.name}`
+            html += `<p>1 ton of ${match.mineral.name} from ${match.miningFacility.name}</p>`
         }
     }
 
@@ -31,4 +32,3 @@ export const SpaceCart = async () => {
 
     return html
 }
-

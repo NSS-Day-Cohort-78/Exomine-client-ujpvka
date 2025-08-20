@@ -1,0 +1,100 @@
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    padding: 1rem;
+}
+
+header {
+    height: 7rem;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.flex-container {
+    display: flex;
+    height: 15rem;
+    justify-content: space-between;
+}
+
+.dropdowns-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    justify-content: start;
+    gap: 5rem;
+    padding: 0 0 0 1rem;
+}
+
+select {
+    width: 9rem;
+    margin-left: 1rem;
+}
+.colony-inventory {
+    text-align: center;
+    width: 50%;
+}
+
+label {
+    font-size: 1.3rem;
+}
+
+.Facility-Inventory-input {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 70%;
+    border: 1px solid black;
+    padding: 1rem 0;
+}
+h2 {
+    margin-bottom: 1rem;
+}
+
+.radio-choices {
+    line-height: 1.6rem;
+}
+
+.space-cart {
+    text-align: center;
+    width: 25%;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 0;
+}
+
+button {
+    width: 9rem;
+    height: 4rem;
+    font-size: large;
+    color: rgb(255, 255, 255);
+    background-color: rgb(212, 72, 62);
+    border-top: 3px solid rgb(243, 146, 139);
+    border-left: 3px solid rgb(243, 146, 139);
+    border-right: 3px solid rgb(154, 53, 46);
+    border-bottom: 3px solid rgb(154, 53, 46);
+    border-radius: 5px;
+}
+
+button:hover {
+    background-image: linear-gradient(to right, rgb(212, 72, 62) 0%, rgb(241, 114, 105) 50%, rgb(212, 72, 62) 100%);
+}
+
+button:active {
+    background-image: linear-gradient(to right, rgb(179, 43, 33) 0%, rgb(243, 99, 89) 50%, rgb(179, 43, 33) 100%);
+    border-top: 3px solid rgb(216, 107, 99);
+    border-left: 3px solid rgb(216, 107, 99);
+    border-right: 3px solid rgb(108, 25, 21);
+    border-bottom: 3px solid rgb(108, 25, 21);
+}

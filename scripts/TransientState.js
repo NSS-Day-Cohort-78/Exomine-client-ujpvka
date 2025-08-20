@@ -4,8 +4,8 @@ const colonyState = {
     tons: 0
 }
 const facilityState = {
-    miningFacilityId: 0,
-    mineralId: 0,
+    miningFacilityId: 1,
+    mineralId: 1,
     tons: 0
 }
 

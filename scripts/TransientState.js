@@ -32,17 +32,14 @@ export const setFacilityTons = (tons) => {
 export const setColonyId = (id) => {
     colonyState.colonyId = id
     document.dispatchEvent(new CustomEvent("stateChanged"))
-    console.log(colonyState)
 }
 
 export const setColonyMineralId = (id) => {
     colonyState.mineralId = id
-    console.log(colonyState)
 }
 
 export const setColonyTons = (tons) => {
     colonyState.tons = tons
-    console.log(colonyState)
 }
 
 export const purchaseMineral = async () => {

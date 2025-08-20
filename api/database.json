@@ -1,346 +1,328 @@
 {
-  "minerals": [
-    {
-      "id": 1,
-      "name": "Iron"
-    },
-    {
-      "id": 2,
-      "name": "Chromium"
-    },
-    {
-      "id": 3,
-      "name": "Molybdenum"
-    },
-    {
-      "id": 4,
-      "name": "Gold"
-    },
-    {
-      "id": 5,
-      "name": "Copper"
-    },
-    {
-      "id": 6,
-      "name": "Platinum"
-    },
-    {
-      "id": 7,
-      "name": "Lithium"
-    },
-    {
-      "id": 8,
-      "name": "Titanium"
-    },
-    {
-      "id": 9,
-      "name": "Silver"
-    },
-    {
-      "id": 10,
-      "name": "Uranium"
-    }
-  ],
-  "governors": [
-    {
-      "id": 1,
-      "name": "Patricia Purdy",
-      "active": true
-    },
-    {
-      "id": 2,
-      "name": "Katrina Bahringer",
-      "active": true
-    },
-    {
-      "id": 3,
-      "name": "Lola Wolf",
-      "active": true
-    },
-    {
-      "id": 4,
-      "name": "Damon Hartmann",
-      "active": true
-    },
-    {
-      "id": 5,
-      "name": "Marcus Chen",
-      "active": true
-    },
-    {
-      "id": 6,
-      "name": "Elena Rodriguez",
-      "active": false
-    },
-    {
-      "id": 7,
-      "name": "Viktor Petrov",
-      "active": true
-    },
-    {
-      "id": 8,
-      "name": "Sarah Mitchell",
-      "active": true
-    },
-    {
-      "id": 9,
-      "name": "Ahmed Hassan",
-      "active": false
-    }
-  ],
-  "colonies": [
-    {
-      "id": 1,
-      "name": "Earth",
-      "governorId": 1
-    },
-    {
-      "id": 2,
-      "name": "Mars",
-      "governorId": 2
-    },
-    {
-      "id": 3,
-      "name": "Europa",
-      "governorId": 3
-    },
-    {
-      "id": 4,
-      "name": "Neptune",
-      "governorId": 4
-    },
-    {
-      "id": 5,
-      "name": "Venus",
-      "governorId": 5
-    },
-    {
-      "id": 6,
-      "name": "Proxima b",
-      "governorId": 6
-    },
-    {
-      "id": 7,
-      "name": "Kepler-452b",
-      "governorId": 7
-    },
-    {
-      "id": 8,
-      "name": "Enceladus",
-      "governorId": 8
-    },
-    {
-      "id": 9,
-      "name": "Ceres",
-      "governorId": 9
-    }
-  ],
-  "miningFacilities": [
-    {
-      "id": 1,
-      "name": "Ganymede",
-      "active": true
-    },
-    {
-      "id": 2,
-      "name": "Io",
-      "active": true
-    },
-    {
-      "id": 3,
-      "name": "Titan",
-      "active": true
-    },
-    {
-      "id": 4,
-      "name": "Phobos Station",
-      "active": true
-    },
-    {
-      "id": 5,
-      "name": "Asteroid Belt Alpha",
-      "active": false
-    },
-    {
-      "id": 6,
-      "name": "Luna Base",
-      "active": true
-    },
-    {
-      "id": 7,
-      "name": "Callisto Mining",
-      "active": true
-    },
-    {
-      "id": 8,
-      "name": "Deimos Outpost",
-      "active": false
-    }
-  ],
-  "colonyInventory": [
-    {
-      "colonyId": 5,
-      "mineralId": 8,
-      "tons": 5,
-      "id": 1
-    },
-    {
-      "colonyId": 3,
-      "mineralId": 6,
-      "tons": 1,
-      "id": 2
-    },
-    {
-      "colonyId": 3,
-      "mineralId": 1,
-      "tons": 2,
-      "id": 3
-    },
-    {
-      "colonyId": 3,
-      "mineralId": 5,
-      "tons": 1,
-      "id": 4
-    },
-    {
-      "colonyId": 7,
-      "mineralId": 10,
-      "tons": 1,
-      "id": 5
-    },
-    {
-      "colonyId": 4,
-      "mineralId": 7,
-      "tons": 2,
-      "id": 6
-    },
-    {
-      "colonyId": 5,
-      "mineralId": 3,
-      "tons": 1,
-      "id": 7
-    }
-  ],
-  "facilityInventory": [
-    {
-      "miningFacilityId": 1,
-      "mineralId": 1,
-      "tons": 2496,
-      "id": 1
-    },
-    {
-      "miningFacilityId": 1,
-      "mineralId": 8,
-      "tons": 1798,
-      "id": 2
-    },
-    {
-      "miningFacilityId": 1,
-      "mineralId": 5,
-      "tons": 948,
-      "id": 3
-    },
-    {
-      "miningFacilityId": 2,
-      "mineralId": 2,
-      "tons": 1199,
-      "id": 4
-    },
-    {
-      "miningFacilityId": 2,
-      "mineralId": 4,
-      "tons": 347,
-      "id": 5
-    },
-    {
-      "miningFacilityId": 2,
-      "mineralId": 9,
-      "tons": 779,
-      "id": 6
-    },
-    {
-      "miningFacilityId": 2,
-      "mineralId": 10,
-      "tons": 124,
-      "id": 7
-    },
-    {
-      "miningFacilityId": 3,
-      "mineralId": 7,
-      "tons": 3194,
-      "id": 8
-    },
-    {
-      "miningFacilityId": 3,
-      "mineralId": 3,
-      "tons": 857,
-      "id": 9
-    },
-    {
-      "miningFacilityId": 4,
-      "mineralId": 1,
-      "tons": 4097,
-      "id": 10
-    },
-    {
-      "miningFacilityId": 4,
-      "mineralId": 8,
-      "tons": 2188,
-      "id": 11
-    },
-    {
-      "miningFacilityId": 4,
-      "mineralId": 6,
-      "tons": 446,
-      "id": 12
-    },
-    {
-      "id": 13,
-      "mineralId": 4,
-      "miningFacilityId": 5,
-      "tons": 0
-    },
-    {
-      "id": 14,
-      "mineralId": 6,
-      "miningFacilityId": 5,
-      "tons": 0
-    },
-    {
-      "miningFacilityId": 6,
-      "mineralId": 1,
-      "tons": 1748,
-      "id": 15
-    },
-    {
-      "miningFacilityId": 6,
-      "mineralId": 5,
-      "tons": 1319,
-      "id": 16
-    },
-    {
-      "miningFacilityId": 6,
-      "mineralId": 8,
-      "tons": 2791,
-      "id": 17
-    },
-    {
-      "miningFacilityId": 7,
-      "mineralId": 2,
-      "tons": 979,
-      "id": 18
-    },
-    {
-      "miningFacilityId": 7,
-      "mineralId": 9,
-      "tons": 1447,
-      "id": 19
-    },
-    {
-      "miningFacilityId": 7,
-      "mineralId": 10,
-      "tons": 272,
-      "id": 20
-    }
-  ]
+    "minerals": [
+        {
+            "id": 1,
+            "name": "Iron"
+        },
+        {
+            "id": 2,
+            "name": "Chromium"
+        },
+        {
+            "id": 3,
+            "name": "Molybdenum"
+        },
+        {
+            "id": 4,
+            "name": "Gold"
+        },
+        {
+            "id": 5,
+            "name": "Copper"
+        },
+        {
+            "id": 6,
+            "name": "Platinum"
+        },
+        {
+            "id": 7,
+            "name": "Lithium"
+        },
+        {
+            "id": 8,
+            "name": "Titanium"
+        },
+        {
+            "id": 9,
+            "name": "Silver"
+        },
+        {
+            "id": 10,
+            "name": "Uranium"
+        }
+    ],
+    "governors": [
+        {
+            "id": 1,
+            "name": "Patricia Purdy",
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Katrina Bahringer",
+            "active": true
+        },
+        {
+            "id": 3,
+            "name": "Lola Wolf",
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Damon Hartmann",
+            "active": true
+        },
+        {
+            "id": 5,
+            "name": "Marcus Chen",
+            "active": true
+        },
+        {
+            "id": 6,
+            "name": "Elena Rodriguez",
+            "active": false
+        },
+        {
+            "id": 7,
+            "name": "Viktor Petrov",
+            "active": true
+        },
+        {
+            "id": 8,
+            "name": "Sarah Mitchell",
+            "active": true
+        },
+        {
+            "id": 9,
+            "name": "Ahmed Hassan",
+            "active": false
+        }
+    ],
+    "colonies": [
+        {
+            "id": 1,
+            "name": "Earth",
+            "governorId": 1
+        },
+        {
+            "id": 2,
+            "name": "Mars",
+            "governorId": 2
+        },
+        {
+            "id": 3,
+            "name": "Europa",
+            "governorId": 3
+        },
+        {
+            "id": 4,
+            "name": "Neptune",
+            "governorId": 4
+        },
+        {
+            "id": 5,
+            "name": "Venus",
+            "governorId": 5
+        },
+        {
+            "id": 6,
+            "name": "Proxima b",
+            "governorId": 6
+        },
+        {
+            "id": 7,
+            "name": "Kepler-452b",
+            "governorId": 7
+        },
+        {
+            "id": 8,
+            "name": "Enceladus",
+            "governorId": 8
+        },
+        {
+            "id": 9,
+            "name": "Ceres",
+            "governorId": 9
+        }
+    ],
+    "miningFacilities": [
+        {
+            "id": 1,
+            "name": "Ganymede",
+            "active": true
+        },
+        {
+            "id": 2,
+            "name": "Io",
+            "active": true
+        },
+        {
+            "id": 3,
+            "name": "Titan",
+            "active": true
+        },
+        {
+            "id": 4,
+            "name": "Phobos Station",
+            "active": true
+        },
+        {
+            "id": 5,
+            "name": "Asteroid Belt Alpha",
+            "active": false
+        },
+        {
+            "id": 6,
+            "name": "Luna Base",
+            "active": true
+        },
+        {
+            "id": 7,
+            "name": "Callisto Mining",
+            "active": true
+        },
+        {
+            "id": 8,
+            "name": "Deimos Outpost",
+            "active": false
+        }
+    ],
+    "colonyInventory": [
+        {
+            "colonyId": 3,
+            "mineralId": 8,
+            "tons": 1,
+            "id": 1
+        },
+        {
+            "colonyId": 8,
+            "mineralId": 8,
+            "tons": 1,
+            "id": 2
+        },
+        {
+            "colonyId": 8,
+            "mineralId": 5,
+            "tons": 1,
+            "id": 3
+        },
+        {
+            "colonyId": 3,
+            "mineralId": 5,
+            "tons": 1,
+            "id": 4
+        }
+    ],
+    "facilityInventory": [
+        {
+            "miningFacilityId": 1,
+            "mineralId": 1,
+            "tons": 2496,
+            "id": 1
+        },
+        {
+            "miningFacilityId": 1,
+            "mineralId": 8,
+            "tons": 1798,
+            "id": 2
+        },
+        {
+            "miningFacilityId": 1,
+            "mineralId": 5,
+            "tons": 948,
+            "id": 3
+        },
+        {
+            "miningFacilityId": 2,
+            "mineralId": 2,
+            "tons": 1199,
+            "id": 4
+        },
+        {
+            "miningFacilityId": 2,
+            "mineralId": 4,
+            "tons": 347,
+            "id": 5
+        },
+        {
+            "miningFacilityId": 2,
+            "mineralId": 9,
+            "tons": 779,
+            "id": 6
+        },
+        {
+            "miningFacilityId": 2,
+            "mineralId": 10,
+            "tons": 124,
+            "id": 7
+        },
+        {
+            "miningFacilityId": 3,
+            "mineralId": 7,
+            "tons": 3194,
+            "id": 8
+        },
+        {
+            "miningFacilityId": 3,
+            "mineralId": 3,
+            "tons": 857,
+            "id": 9
+        },
+        {
+            "miningFacilityId": 4,
+            "mineralId": 1,
+            "tons": 4097,
+            "id": 10
+        },
+        {
+            "miningFacilityId": 4,
+            "mineralId": 8,
+            "tons": 2197,
+            "id": 11
+        },
+        {
+            "miningFacilityId": 4,
+            "mineralId": 6,
+            "tons": 446,
+            "id": 12
+        },
+        {
+            "id": 13,
+            "mineralId": 4,
+            "miningFacilityId": 5,
+            "tons": 0
+        },
+        {
+            "id": 14,
+            "mineralId": 6,
+            "miningFacilityId": 5,
+            "tons": 0
+        },
+        {
+            "miningFacilityId": 6,
+            "mineralId": 1,
+            "tons": 1748,
+            "id": 15
+        },
+        {
+            "miningFacilityId": 6,
+            "mineralId": 5,
+            "tons": 1318,
+            "id": 16
+        },
+        {
+            "miningFacilityId": 6,
+            "mineralId": 8,
+            "tons": 2791,
+            "id": 17
+        },
+        {
+            "miningFacilityId": 7,
+            "mineralId": 2,
+            "tons": 979,
+            "id": 18
+        },
+        {
+            "miningFacilityId": 7,
+            "mineralId": 9,
+            "tons": 1447,
+            "id": 19
+        },
+        {
+            "miningFacilityId": 7,
+            "mineralId": 10,
+            "tons": 272,
+            "id": 20
+        }
+    ]
 }

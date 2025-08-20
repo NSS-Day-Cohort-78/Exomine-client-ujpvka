@@ -31,15 +31,14 @@ export const Facilities = async () => {
     .join("")
 
   html += `
-  html += `
+  
     </select>
   </section>
   `
-  </section>
-  `
+  
 
   return html
-  return html
+
 }
 
 // governors'taki gibi basit change handler

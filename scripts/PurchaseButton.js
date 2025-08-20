@@ -1,6 +1,9 @@
-const handlePurchaseSubmission = (clickEvent) => {
+import { purchaseMineral, resetTransientState } from "./TransientState.js"
+
+const handlePurchaseSubmission = async (clickEvent) => {
     if (clickEvent.target.id === "purchase-button") {
-        savePurchase()
+        await purchaseMineral()
+        resetTransientState()
     }
 }
 

@@ -59,7 +59,7 @@ export const purchaseMineral = async () => {
         )
     })
 
-    if (colonyState.colonyId > 0 || colonyState.mineralId > 0) {
+    if (colonyState.colonyId > 0 && colonyState.mineralId > 0) {
         if (filteredInventory.length > 0) {
             const url = "http://localhost:8088/colonyInventory"
             colonyInventoryId = filteredInventory[0].id

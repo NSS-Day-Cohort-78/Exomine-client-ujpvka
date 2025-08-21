@@ -183,6 +183,24 @@
       "mineralId": 4,
       "tons": 1,
       "id": 1
+    },
+    {
+      "colonyId": 3,
+      "mineralId": 4,
+      "tons": 1,
+      "id": 2
+    },
+    {
+      "colonyId": 3,
+      "mineralId": 10,
+      "tons": 1,
+      "id": 3
+    },
+    {
+      "colonyId": 3,
+      "mineralId": 2,
+      "tons": 1,
+      "id": 4
     }
   ],
   "facilityInventory": [
@@ -207,13 +225,13 @@
     {
       "miningFacilityId": 2,
       "mineralId": 2,
-      "tons": 1199,
+      "tons": 1198,
       "id": 4
     },
     {
       "miningFacilityId": 2,
       "mineralId": 4,
-      "tons": 344,
+      "tons": 343,
       "id": 5
     },
     {
@@ -225,7 +243,7 @@
     {
       "miningFacilityId": 2,
       "mineralId": 10,
-      "tons": 122,
+      "tons": 121,
       "id": 7
     },
     {
